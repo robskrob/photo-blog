@@ -44,15 +44,11 @@ h1 {
 }
 
 a {
+  padding: 11px 37px;
+  display: block;
   text-decoration: none;
-}
-
-.active {
-  background-color: #91aa9d;
-}
-
-.active > a {
-  color: #fafdf3;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .header-nav {
@@ -65,17 +61,16 @@ a {
 
 .header-nav > div {
   display: inline-block;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding: 11px 37px;
 }
 
-.header-nav div:not(:first-child) {
-  background-color: #fafdf3;
+.active {
+  color: #fafdf3;
+  background-color: #91aa9d;
 }
 
-.unactive > a {
+.unactive {
   color: #d1dbbd;
+  background-color: #fafdf3;
 }
 
 .header-image {
