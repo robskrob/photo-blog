@@ -1,7 +1,7 @@
 $("a").on( "click", function() {
-  if (this.className == 'unactive') {
+  if (this.className != 'active') {
     var el = $('.active')[0]
-    el.className = 'unactive'
+    el.className = ''
     this.className = 'active'
   }
 });
